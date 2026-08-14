@@ -31,7 +31,7 @@ public class JwtService {
         Date now = new Date();
 
         Date expiration = new Date(
-                now.getTime() + accessTokenExpirationHours + 1000 * 60 * 60
+                now.getTime() + accessTokenExpirationHours * 1000 * 60 * 60
         );
 
         return Jwts.builder()
