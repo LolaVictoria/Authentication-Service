@@ -1,5 +1,4 @@
 ﻿# Authentication-Service
-# Auth Service
 
 A standalone authentication service built with **Spring Boot** and **PostgreSQL** for use with my e-commerce application.
 
