@@ -215,6 +215,7 @@ flowchart LR
     Backend --> Products["Products / Orders / Other Resources"]
 
     Auth -.->|Authentication| Backend
+```
 
 The Auth Service is responsible for authentication-related functionality, while the third party backend can focus on the application's core business logic.
 
