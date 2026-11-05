@@ -204,18 +204,18 @@ Reset tokens are temporary and expire after a configured period.
 The Auth Service is intended to be used as a separate authentication service for a third party application.
 
 ```mermaid
-flowchart LR
-    User[User] --> Frontend[thirdparty  Frontend]
 
-    Frontend --> Auth[Auth Service]
-    Frontend --> Third-party App Backend
+flowchart LR
+    User[User] --> Frontend["Third-party Frontend"]
+
+    Frontend --> Auth["Auth Service"]
+    Frontend --> Backend["Third-party App Backend"]
 
     Auth --> AuthDB[(Auth Database)]
 
-    Ecommerce --> Products[Products / Orders / Other Resources]
+    Backend --> Products["Products / Orders / Other Resources"]
 
-    Auth -. Authentication .-> Third-party app
-```
+    Auth -.->|Authentication| Backend
 
 The Auth Service is responsible for authentication-related functionality, while the third party backend can focus on the application's core business logic.
 
