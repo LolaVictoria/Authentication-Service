@@ -201,7 +201,7 @@ Reset tokens are temporary and expire after a configured period.
 
 ## E-Commerce Integration
 
-The Auth Service is intended to be used as a separate authentication service for my e-commerce application.
+The Auth Service is intended to be used as a separate authentication service for a third party application.
 
 ```mermaid
 flowchart LR
