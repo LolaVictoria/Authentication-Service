@@ -204,7 +204,6 @@ Reset tokens are temporary and expire after a configured period.
 The Auth Service is intended to be used as a separate authentication service for a third party application.
 
 ```mermaid
-
 flowchart LR
     User[User] --> Frontend["Third-party Frontend"]
 
